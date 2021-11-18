@@ -3,7 +3,8 @@
 }
 
 html{
-  background: linear-gradient(#0f053be0, #0f053be0), url('/images/capa.jpg') no-repeat center center fixed;
+  /* background: linear-gradient(#0f053be0, #0f053be0), url('/images/capa.jpg') no-repeat center center fixed; */
+  background: linear-gradient(#0000007c, #0000007c), url('/images/capa_natal.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -46,7 +47,7 @@ p {
 #comunicados{
     position:absolute;
     bottom:3.5rem;
-    right:1.2rem;
+    right:0.8rem;
     width: 350px;
 }
 
