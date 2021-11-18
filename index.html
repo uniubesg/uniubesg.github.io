@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <!-- <meta http-equiv="refresh" content="15" > -->
+  <meta http-equiv="refresh" content="1800" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UNIUBE</title>
@@ -23,7 +23,7 @@
     <img src="images/master.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
 
     <div id="comunicados">
-      <h4>Avisos</h4>
+      <h4><img src="images/warning.png" class="scale-up"/></h4>
       <span id="mensagem">
         <!-- Atualizar diretamente pelo JS abaixo -->
       </span>
@@ -38,19 +38,17 @@
       } else {
         displayDate = d.toLocaleTimeString('pt-BR', { timeZone: 'America/Belem' });
       }
-      document.getElementById("timer").innerHTML = displayDate;
-      dayName = new Array ("domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado")
-      monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
-      now = new Date
-      document.getElementById("date").innerHTML = dayName[now.getDay() ] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear();
+      document.getElementById("timer").innerHTML = displayDate;      
+      }
       
-      // Atualizar mensagem dinamicamente 
-      // document.getElementById("mensagem").innerHTML = "<i>Nenhum comunicado para o momento</i>";
-    }
-
-    var refresh = setInterval(function() { 
-        $('#mensagem').load('msg.html');
-    }, 1000);
+      //Data
+    dayName = new Array ("domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado")
+    monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+    now = new Date
+    document.getElementById("date").innerHTML = dayName[now.getDay() ] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear();
+    
+    // Atualizar mensagem dinamicamente 
+    document.getElementById("mensagem").innerHTML = "<i>Nenhum comunicado para o momento</i>";
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
