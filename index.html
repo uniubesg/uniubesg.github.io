@@ -1,37 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UNIUBE</title>
-    <!-- CSS Links -->
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <!-- Inicio do corpo do site -->
-    <main>
-      <img src="images/avatar.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
-      <img src="images/master.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
 
-<!--       <h1 id="NameGithub">AVISOS</h1>
-        <span id="UserNameGithub">
-          <i>Nenhum aviso para o momento</i>
-        </span> -->
-		<span id="timer"></span>
-    </main>
-	    <script>
-    var myVar = setInterval(myTimer ,1000);
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UNIUBE</title>
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <!-- Inicio do corpo do site -->
+  <main>
+    <h1 id="timer"></h1>
+    <span>
+      <i id="date"></i>
+    </span>
+    <img src="images/avatar.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
+    <img src="images/master.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
+
+    <div id="comunicados">
+      <h4>Avisos</h4>
+      <span id="mensagem">
+        <!-- Atualizar diretamente pelo JS abaixo -->
+      </span>
+    </div>
+  </main>
+  <script>
+    var myVar = setInterval(myTimer, 1000);
     function myTimer() {
-        var d = new Date(), displayDate;
-       if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
-          displayDate = d.toLocaleTimeString('pt-BR');
-       } else {
-          displayDate = d.toLocaleTimeString('pt-BR', {timeZone: 'America/Belem'});
-       }
-          document.getElementById("timer").innerHTML = displayDate;
+      var d = new Date(), displayDate;
+      if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+        displayDate = d.toLocaleTimeString('pt-BR');
+      } else {
+        displayDate = d.toLocaleTimeString('pt-BR', { timeZone: 'America/Belem' });
+      }
+      document.getElementById("timer").innerHTML = displayDate;
+      dayName = new Array ("domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado")
+      monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+      now = new Date
+      document.getElementById("date").innerHTML = dayName[now.getDay() ] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear();
+      
+      // Atualizar mensagem dinamicamente 
+      document.getElementById("mensagem").innerHTML = "<i>Nenhum comunicado para o momento</i>";
     }
-          
-    </script>
-  </body>
+
+  </script>
+</body>
+
 </html>
