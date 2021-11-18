@@ -69,6 +69,10 @@ p {
   min-height: 50px;
 }
 
+.weather{
+  margin-top: 1rem;
+}
+
 .scale-up {
   animation: scale-up 1s ease-in both infinite;
 
