@@ -26,6 +26,7 @@
       <h4><img src="images/warning.png" class="scale-up"/></h4>
       <span id="mensagem">
         <!-- Atualizar diretamente pelo JS abaixo -->
+        <b id="conteudo"></b>
       </span>
     </div>
   </main>
@@ -48,7 +49,18 @@
     document.getElementById("date").innerHTML = dayName[now.getDay() ] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear();
     
     // Atualizar mensagem dinamicamente 
-    document.getElementById("mensagem").innerHTML = "<i>Nenhum comunicado para o momento</i>";
+    // document.getElementById("mensagem").innerHTML = "<i>Nenhum comunicado para o momento</i>";
+    $(document).ready(function(){
+    var textos = ["O uso de máscara é obrigatório.", "Favor, manter o celular desligado durante a aula.", "Em caso de dúvidas ou problemas técnicos, chame o Instrutor."];
+    var atual = 0;
+    $('#mensagem').text(textos[atual++]);
+    setInterval(function() {
+        $('#mensagem').fadeOut(function() {
+            if (atual >= textos.length) atual = 0;
+            $('#mensagem').text(textos[atual++]).fadeIn();
+        });
+    }, 5000);
+});
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
