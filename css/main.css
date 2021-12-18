@@ -99,3 +99,26 @@ p {
     
   }
 }
+
+.cloud {
+  animation: rotationLeft 80s linear infinite;
+  z-index: -1;
+  position: absolute;
+
+}
+
+@keyframes rotationLeft {
+  0% {
+    transform: translateZ(0);
+  }
+  100% {
+    transform: translate3d(-50%,0,0);
+  }
+
+}
+
+.img_cloud {
+  width: 100%;
+  opacity: 0.5;
+  margin-top: 10rem;
+}
