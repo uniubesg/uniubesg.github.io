@@ -100,7 +100,7 @@ p {
   }
 }
 
-.cloud {
+/* .cloud {
   animation: rotationLeft 80s linear infinite;
   z-index: -1;
   position: absolute;
@@ -121,4 +121,29 @@ p {
   width: 100%;
   opacity: 0.5;
   margin-top: 10rem;
+} */
+
+/* .css-selector {
+  background: linear-gradient(143deg, #3300ff, #0a0030, #699edd);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 10s ease infinite;
+  -moz-animation: AnimationName 10s ease infinite;
+  animation: AnimationName 10s ease infinite;
 }
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 54%}
+  50%{background-position:100% 47%}
+  100%{background-position:0% 54%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 54%}
+  50%{background-position:100% 47%}
+  100%{background-position:0% 54%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 54%}
+  50%{background-position:100% 47%}
+  100%{background-position:0% 54%}
+} */
