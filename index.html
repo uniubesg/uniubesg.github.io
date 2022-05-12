@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="2700000" >
+  <meta http-equiv="refresh" content="1800" >
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>UNIUBE</title>
@@ -14,10 +14,12 @@
 </head>
 
 <body>
-    <div class="alert alert-danger aviso" role="alert">
+
+    <!-- <div class="alert alert-danger" role="alert">
       <i class="bi bi-exclamation-circle-fill"></i> 
       Manter o celular e demais aparelhos eletrônicos desligados.
-    </div> 
+    </div>  -->
+
   <!-- Inicio do corpo do site -->
   <main>
     <h1 id="timer"></h1>
@@ -26,18 +28,13 @@
     </span>
     <img src="images/avatar.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
     <img src="images/master.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
-
-    <!-- <div id="comunicados">
-      <h4><img src="images/warning.png" class="scale-up"/></h4>
-      <span id="mensagem">
-        <b id="conteudo"></b>
-      </span>
-    </div> -->
   </main>
 
-  <!-- <div class="cloud">
-      <img src="images/smoke.png" alt="" class="img_cloud">
-  </div> -->
+  <!-- AVISOS AVISOS AVISOS  -->
+  <div class="alert alert-danger" role="alert" id="">
+    <i class="bi bi-exclamation-circle-fill"></i> 
+    Manter o celular e demais aparelhos eletrônicos desligados.
+  </div> 
 
   <script>
     var myVar = setInterval(myTimer, 1000);
@@ -51,28 +48,14 @@
       document.getElementById("timer").innerHTML = displayDate;      
       }
       
-      //Data
+    //Data
     dayName = new Array ("domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado")
     monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
     now = new Date
     document.getElementById("date").innerHTML = dayName[now.getDay() ] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear();
-
-    // Atualizar mensagem dinamicamente 
-    // document.getElementById("mensagem").innerHTML = "<i>Nenhum comunicado para o momento</i>";
-
-//     $(document).ready(function(){
-//     var textos = ["O uso de máscara é obrigatório.", "Favor, manter o celular desligado durante a aula.", "Em caso de dúvidas ou problemas técnicos, chame o Instrutor."];
-//     var atual = 0;
-//     $('#mensagem').text(textos[atual++]);
-//     setInterval(function() {
-//         $('#mensagem').fadeOut(function() {
-//             if (atual >= textos.length) atual = 0;
-//             $('#mensagem').text(textos[atual++]).fadeIn();
-//         });
-//     }, 5000);
-// });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </body>
 
 </html>
