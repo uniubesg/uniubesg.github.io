@@ -99,6 +99,25 @@ p {
   }
 }
 
+/* .animacao {
+  animation: animacao 
+      3s linear infinite;
+}
+
+@keyframes animacao {
+  0% {
+      opacity: 0;
+  }
+
+  50% {
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 0;
+  }
+} */
+
 /* .cloud {
   animation: rotationLeft 80s linear infinite;
   z-index: -1;
