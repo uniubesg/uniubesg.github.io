@@ -2,10 +2,10 @@
   margin: 0;
 }
 
-html{
+/* html{ */
   /* background: linear-gradient(#000000a2, #000000a2), url('/images/capa.jpg') no-repeat center center fixed; */
   /* background: linear-gradient(#0000007c, #0000007c), url('/images/capa.jpg') no-repeat center center fixed; */
-  animation: changeBackgroundImage 30s infinite;
+  /* animation: changeBackgroundImage 30s infinite;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,7 +14,7 @@ html{
   font-family: sans-serif;
   background: rgba(0, 0, 0, 0.7);
   background-blend-mode: darken;   
-}
+} */
 
 body {
   display: grid;
@@ -77,31 +77,7 @@ p {
   margin: 0.5rem !important;
 }
 
-.weather{
-  margin-top: 1rem;
-}
-
-.scale-up {
-  animation: scale-up 1s ease-in both infinite;
-
-}
-
-@keyframes scale-up {
-  0% {
-      transform: scale(1);
-  }
-
-  50% {
-      transform: scale(1.2);
-  }
-
-  100% {
-    transform: scale(1);
-    
-  }
-}
-
-@keyframes changeBackgroundImage {
+/* @keyframes changeBackgroundImage {
   0% {
     background-image: url('../images/capa.jpg');
     background-size: cover;
@@ -125,4 +101,16 @@ p {
     background-image: url('../images/capa.jpg');
     background-size: cover;
   }
+} */
+
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
 }
