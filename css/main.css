@@ -3,15 +3,17 @@
 }
 
 html{
-  background: linear-gradient(#000000a2, #000000a2), url('/images/capa.jpg') no-repeat center center fixed;
+  /* background: linear-gradient(#000000a2, #000000a2), url('/images/capa.jpg') no-repeat center center fixed; */
   /* background: linear-gradient(#0000007c, #0000007c), url('/images/capa.jpg') no-repeat center center fixed; */
+  animation: changeBackgroundImage 30s infinite;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-size: cover;  
   font-family: sans-serif;
-   
+  background: rgba(0, 0, 0, 0.7);
+  background-blend-mode: darken;   
 }
 
 body {
@@ -99,69 +101,28 @@ p {
   }
 }
 
-/* .animacao {
-  animation: animacao 
-      3s linear infinite;
-}
-
-@keyframes animacao {
+@keyframes changeBackgroundImage {
   0% {
-      opacity: 0;
+    background-image: url('../images/capa.jpg');
+    background-size: cover;
+  }
+  25% {
+    background-image: url('../images/capa_01.jpg');
+    background-size: cover;
   }
 
   50% {
-      opacity: 1;
+    background-image: url('../images/capa_02.jpg');
+    background-size: cover;
+  }
+
+  75% {
+    background-image: url('../images/capa_03.jpg');
+    background-size: cover;
   }
 
   100% {
-      opacity: 0;
+    background-image: url('../images/capa.jpg');
+    background-size: cover;
   }
-} */
-
-/* .cloud {
-  animation: rotationLeft 80s linear infinite;
-  z-index: -1;
-  position: absolute;
-
 }
-
-@keyframes rotationLeft {
-  0% {
-    transform: translateZ(0);
-  }
-  100% {
-    transform: translate3d(-50%,0,0);
-  }
-
-}
-
-.img_cloud {
-  width: 100%;
-  opacity: 0.5;
-  margin-top: 10rem;
-} */
-
-/* .css-selector {
-  background: linear-gradient(143deg, #3300ff, #0a0030, #699edd);
-  background-size: 600% 600%;
-
-  -webkit-animation: AnimationName 10s ease infinite;
-  -moz-animation: AnimationName 10s ease infinite;
-  animation: AnimationName 10s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-  0%{background-position:0% 54%}
-  50%{background-position:100% 47%}
-  100%{background-position:0% 54%}
-}
-@-moz-keyframes AnimationName {
-  0%{background-position:0% 54%}
-  50%{background-position:100% 47%}
-  100%{background-position:0% 54%}
-}
-@keyframes AnimationName {
-  0%{background-position:0% 54%}
-  50%{background-position:100% 47%}
-  100%{background-position:0% 54%}
-} */
