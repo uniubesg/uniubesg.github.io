@@ -3,17 +3,13 @@
 }
 
 html{
-  /* background: linear-gradient(#000000a2, #000000a2), url('/images/capa.jpg') no-repeat center center fixed; */
-  /* background: linear-gradient(#0000007c, #0000007c), url('/images/capa.jpg') no-repeat center center fixed; */
-  animation: changeBackgroundImage 30s infinite;
+  background: linear-gradient(#0000007c, #0000007c), url('/images/capa.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-size: cover;  
-  font-family: sans-serif;
-  background: rgba(0, 0, 0, 0.5);
-  background-blend-mode: darken;   
+  font-family: sans-serif; 
 }
 
 body {
@@ -75,30 +71,4 @@ p {
 
 .alert{
   margin: 0.5rem !important;
-}
-
-@keyframes changeBackgroundImage {
-  0% {
-    background-image: url('../images/capa.jpg');
-    background-size: cover;
-  }
-  25% {
-    background-image: url('../images/capa_01.jpg');
-    background-size: cover;
-  }
-
-  50% {
-    background-image: url('../images/capa_02.jpg');
-    background-size: cover;
-  }
-
-  75% {
-    background-image: url('../images/capa_03.jpg');
-    background-size: cover;
-  }
-
-  100% {
-    background-image: url('../images/capa.jpg');
-    background-size: cover;
-  }
 }
