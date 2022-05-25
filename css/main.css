@@ -6,15 +6,6 @@ a {
   margin: 0;
 }
 
-html{
-  /* background: linear-gradient(#0000007c, #0000007c), url('/images/capa.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;   */
-  font-family: sans-serif; 
-}
-
 body {
   width: 100vw;
   height: 100vh;
@@ -24,10 +15,16 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* Remover linhas abaixo se necessário usar imagem de Background */
-  background: linear-gradient(45deg, #1A1A40, #270082, #7A0BC0, #FA58B6);
-  background-size: 300% 300%;
-  animation: colors 12s ease infinite;
+  background: linear-gradient(#0000004d, #0000004d), url('/images/capa.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;  
+  font-family: sans-serif; 
+}
+
+#timer, #date{
+  text-shadow: 1px 1px black;
 }
 
 main {
@@ -53,20 +50,6 @@ main > img {
     animation: animarAlerta ease-in-out 2s infinite;
 }
 
-@keyframes colors{
-  0%{
-    background-position: 0% 50%;
-  }
-
-  50%{
-    background-position: 100% 50%;
-  }
-
-  100%{
-    background-position: 0% 50%;
-  }
-}
-
 @keyframes animarAlerta{
   0%{
     transform: scale(1);
@@ -78,11 +61,4 @@ main > img {
   100%{
     transform: scale(1);
   }
-}
-
-.tempo{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%
 }
