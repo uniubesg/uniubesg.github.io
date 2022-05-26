@@ -16,11 +16,12 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   background: linear-gradient(#0000004d, #0000004d), url('/images/capa.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;  
-  font-family: sans-serif; 
+  font-family: sans-serif;  */
 }
 
 #timer, #date{
@@ -32,6 +33,7 @@ main {
   height: 50vh;
   text-align: center;
   /* margin-top: 8rem; */
+  z-index: 1;
 }
 
 main > img {
