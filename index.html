@@ -15,12 +15,12 @@
 
 <body class="gradient">
 
-  <div class="weather">
+  <!-- <div class="weather">
     <a class="weatherwidget-io" href="https://forecast7.com/pt/n19d31n46d05/sao-gotardo/" data-label_1="São Gotardo" data-mode="Current" data-days="3" data-textcolor="#ffffff" >São Gotardo</a>
     <script>
     !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
     </script>
-  </div>
+  </div> -->
   
     <!-- <div class="alert alert-danger" role="alert">
       <i class="bi bi-exclamation-circle-fill"></i> 
@@ -28,6 +28,22 @@
     </div>  -->
 
   <!-- Inicio do corpo do site -->
+  <div>
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+    <defs>
+    <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+    </defs>
+    <g class="parallax">
+    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+    </g>
+    </svg>
+    </div>
+    <!--Waves end-->
+  
   <main>
     <h1 id="timer"></h1>
     <div>
