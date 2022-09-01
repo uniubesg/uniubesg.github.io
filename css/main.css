@@ -15,10 +15,12 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* background: linear-gradient(#0000004d, #0000004d), url('/images/capa.jpg') no-repeat center center fixed; */
-  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  background-image: url(/images/fundo.png);
   background-size: cover;
-  background-repeat: no-repeat;
+  /* background: linear-gradient(#0000004d, #0000004d), url('/images/capa.jpg') no-repeat center center fixed; */
+  /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  background-size: cover;
+  background-repeat: no-repeat; */
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;  
@@ -68,18 +70,12 @@ main>img {
   }
 }
 
-.weather {
-  position: absolute;
-  width: 100%;
-  top: 0rem;
-  right: 0rem;
-}
-
+/* 
+  ANIMAÇÃO ONDAS
 .waves {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  /*Fix for safari gap*/
   min-height: 100px;
   max-height: 150px;
   bottom: 0;
@@ -93,7 +89,6 @@ main>img {
   background-color: white;
 }
 
-/* Animation */
 
 .parallax>use {
   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
@@ -129,7 +124,7 @@ main>img {
   }
 }
 
-/*Shrinking for mobile*/
+
 @media (max-width: 768px) {
   .waves {
     height: 40px;
@@ -143,4 +138,4 @@ main>img {
   h1 {
     font-size: 24px;
   }
-}
+} */
