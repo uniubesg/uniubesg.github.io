@@ -15,7 +15,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: url(/images/fundo.png);
+  background-image: url(/images/fundo.jpg);
   background-size: cover;
   /* background: linear-gradient(#0000004d, #0000004d), url('/images/capa.jpg') no-repeat center center fixed; */
   /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
