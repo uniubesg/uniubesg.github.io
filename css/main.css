@@ -17,7 +17,7 @@ body {
   justify-content: center;
   /* background-image: url(/images/fundo.jpg); */
   background-size: cover;
-  background: linear-gradient(#0000008f, #00000041), url('/images/carnaval_fundo.jpg') no-repeat center center fixed;
+  background: linear-gradient(#0000008f, #00000041), url('/images/fundo_azul.jpg') no-repeat center center fixed;
   /* background: linear-gradient(#0000008f, #0000008f), url('/images/carnaval_fundo.jpg') no-repeat center center fixed; */
   /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
   background-size: cover;
