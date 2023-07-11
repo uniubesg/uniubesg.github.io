@@ -1,9 +1,13 @@
-a {
+/* a {
   pointer-events: none;
-}
+} */
 
 * {
   margin: 0;
+}
+
+a{
+  color: white !important;
 }
 
 body {
@@ -17,15 +21,15 @@ body {
   justify-content: center;
   /* background-image: url(/images/fundo.jpg); */
   background-size: cover;
-  background: linear-gradient(#0000008f, #00000041), url('/images/fundo_azul.jpg') no-repeat center center fixed;
+  /* background: linear-gradient(#0500466b, #0500466b), url('../images/colors.jpg') no-repeat center center fixed; */
   /* background: linear-gradient(#0000008f, #0000008f), url('/images/carnaval_fundo.jpg') no-repeat center center fixed; */
-  /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
+  background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%);
   background-size: cover;
-  background-repeat: no-repeat; */
-  /* -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;  
-  font-family: sans-serif;  */
+  font-family: sans-serif; 
 }
 
 #timer,
@@ -54,25 +58,10 @@ main>img {
   /* bottom:3.5rem; */
   /* top: 8rem;
     right:2.5rem; */
-  animation: animarAlerta ease-in-out 2s infinite;
+  /* animation: animarAlerta ease-in-out 2s infinite; */
+  text-align: left;
 }
 
-@keyframes animarAlerta {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.05);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
-/* 
-  ANIMAÇÃO ONDAS
 .waves {
   position: absolute;
   width: 100vw;
@@ -139,4 +128,4 @@ main>img {
   h1 {
     font-size: 24px;
   }
-} */
+}
