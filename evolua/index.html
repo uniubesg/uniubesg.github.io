@@ -53,15 +53,15 @@
     <img src="images/master.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
    <!-- AVISOS AVISOS AVISOS  -->
     <div class="alert alert-info" role="alert" id="comunicados">
-      <!-- <i class="bi bi-phone-vibrate-fill"></i> Favor, <b>desligue</b> o celular. <hr>
-      <i class="bi bi-patch-question-fill"></i> Em caso de dúvidas, <b>chame o professor</b>.  -->
-      <input type="checkbox" id="celularCheck" name="celularCheck" value="1">
-      <label for="celularCheck"> Meu celular está <b>guardado</b> e no <b>silencioso</b>.</label><hr>
+      <i class="bi bi-phone-vibrate-fill"></i> Meu celular está <b>guardado</b> e no <b>silencioso</b>. <hr>
+      <!-- <i class="bi bi-patch-question-fill"></i> Em caso de dúvidas, <b>chame o professor</b>. -->
+      <!-- <input type="checkbox" id="celularCheck" name="celularCheck" value="1"> -->
+      <!-- <label for="celularCheck"> Meu celular está <b>guardado</b> e no <b>silencioso</b>.</label><hr> -->
       <em><i class="bi bi-patch-question-fill"></i> Em caso de dúvidas, chame o professor</em>.
       <!-- <b>Recesso de Carnaval</b><br><br> -->
       <!-- <span>Estaremos em recesso do dia <b>18/02 até 22/02.</b><br>Retornaremos no dia <b>23/02 (quinta-feira)</b>.</span> -->
     </div> 
-    <a href="http://app.evoluaeducacao.com.br"><button id="btnAcessar" disabled="true" class="form-control btn btn-success"><i class="bi bi-check"></i>Acessar</button></a>
+    <a href="http://app.evoluaeducacao.com.br"><button id="btnAcessar" class="form-control btn btn-success"><i class="bi bi-check"></i>Acessar</button></a>
 
     <!-- <div class="alert alert-info" role="alert" id="comunicados2">
       <i class="bi bi-information-circle-fill"></i> 
@@ -95,17 +95,17 @@
 
   <script>
 
-    var vCheck = document.getElementById("celularCheck");
+    // var vCheck = document.getElementById("celularCheck");
 
-    function verifica(){
-      if ($('#celularCheck').is(':checked')){
-        $('#btnAcessar').prop('disabled', false)
-      }else{
-        $('#btnAcessar').prop('disabled', true)
-      }
-    };
+    // function verifica(){
+    //   if ($('#celularCheck').is(':checked')){
+    //     $('#btnAcessar').prop('disabled', false)
+    //   }else{
+    //     $('#btnAcessar').prop('disabled', true)
+    //   }
+    // };
 
-    vCheck.addEventListener("click", verifica, false);
+    // vCheck.addEventListener("click", verifica, false);
     
 
   
