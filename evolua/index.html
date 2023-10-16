@@ -72,13 +72,6 @@
 
   <script>
 
-const fullscreen = (mode = true, el = 'body') =>
-  mode
-    ? document.querySelector(body).requestFullscreen()
-    : document.exitFullscreen();
-    fullscreen(); // Opens `body` in fullscreen mode
-    fullscreen(false); // Exits fullscreen mode
-
     myVar = setInterval(myTimer, 1000);
     function myTimer() {
       var d = new Date(), displayDate;
