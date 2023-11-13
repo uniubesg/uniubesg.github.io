@@ -29,10 +29,10 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  background-image: url(/images/fundo.jpg);
+  /* background-image: url(../images/proclamacao.png); */
   background-size: cover;
   /* background: linear-gradient(#0500466b, #0500466b), url('../images/colors.jpg') no-repeat center center fixed; */
-  /* background: linear-gradient(#0000008f, #0000008f), url('/images/carnaval_fundo.jpg') no-repeat center center fixed; */
+  background: linear-gradient(#0000008f, #0000008f), url('../images/proclamacao.png') no-repeat center center fixed;
   /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); */
   background-size: cover;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@ main>img {
   text-align: left;
 }
 
-.waves {
+/* .waves {
   position: absolute;
   width: 100vw;
   height: 100vh;
@@ -80,7 +80,7 @@ main>img {
   max-height: 150px;
   bottom: 0;
   right: 0;
-}
+} */
 
 .content {
   position: relative;
