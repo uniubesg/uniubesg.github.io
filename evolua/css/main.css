@@ -32,7 +32,7 @@ body {
   /* background-image: url(../images/proclamacao.png); */
   background-size: cover;
   /* background: linear-gradient(#0500466b, #0500466b), url('../images/colors.jpg') no-repeat center center fixed; */
-  background: linear-gradient(#00000052, #00000052), url('../images/natal.jpg') no-repeat center center fixed;
+  background: linear-gradient(#00000052, #00000052), url('../images/fundo.jpg') no-repeat center center fixed;
   /* background: linear-gradient(60deg, rgba(84, 58, 183, 1) 0%, rgba(0, 172, 193, 1) 100%); */
   background-size: cover;
   background-repeat: no-repeat;
