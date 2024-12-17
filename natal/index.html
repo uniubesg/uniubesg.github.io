@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flocos de Neve</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body class="gradient">
+
+    <!-- <div class="weather">
+      <a class="weatherwidget-io" href="https://forecast7.com/pt/n19d31n46d05/sao-gotardo/" data-label_1="São Gotardo" data-mode="Current" data-days="3" data-textcolor="#ffffff" >São Gotardo</a>
+      <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+      </script>
+    </div> -->
+    
+      <!-- <div class="alert alert-danger" role="alert">
+        <i class="bi bi-exclamation-circle-fill"></i> 
+        Manter o celular e demais aparelhos eletrônicos desligados.
+      </div>  -->
+  
+    <!-- Inicio do corpo do site -->
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+      <defs>
+      <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+      </defs>
+      <g class="parallax">
+      <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+      <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+      <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+      <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+      </g>
+      </svg>
+      </div>
+      <!--Waves end-->
+    
+    <main>
+      <h1 id="timer"></h1>
+      <div>
+        <i id="date"></i>
+      </div>
+      <img src="images/avatar.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
+      <img src="images/master.png" alt="Foto de perfil" id="PhotoGithub" height="50%" />
+     <!-- AVISOS AVISOS AVISOS  -->
+      <div class="alert alert-danger" role="alert" id="comunicados">
+        <i class="bi bi-phone-vibrate-fill"></i> Mantenha o celular <b>guardado</b> e no <b>silencioso</b>.
+        <!-- <hr><i class="bi bi-exclamation-triangle-fill"></i> <b>Período de Férias</b> <br>Do dia 17/07 até 26/07 -->
+        <!-- <em><i class="bi bi-patch-question-fill"></i> Em caso de dúvidas, chame o professor</em>. -->
+        <!-- <b>Recesso de Carnaval</b><br><br> -->
+        <!-- <span>Estaremos em recesso do dia <b>18/02 até 22/02.</b><br>Retornaremos no dia <b>23/02 (quinta-feira)</b>.</span> -->
+      </div> 
+  
+      <!-- <div class="alert alert-info" role="alert" id="comunicados2">
+        <i class="bi bi-information-circle-fill"></i> 
+        Em caso de dúvidas, <b>chame</b> o professor.
+      </div> -->
+    </main>
+  
+  
+  
+    <script>
+      myVar = setInterval(myTimer, 1000);
+      function myTimer() {
+        var d = new Date(), displayDate;
+        if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+          displayDate = d.toLocaleTimeString('pt-BR');
+        } else {
+          displayDate = d.toLocaleTimeString('pt-BR', { timeZone: 'America/Belem', hour: '2-digit', minute:'2-digit'});
+        }
+        document.getElementById("timer").innerHTML = displayDate;      
+        }
+        
+      //Data
+      dayName = new Array ("domingo", "segunda-feira", "terça-feira", "quarta-feira", "quinta-feira", "sexta-feira", "sábado")
+      monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro")
+      now = new Date
+      document.getElementById("date").innerHTML = dayName[now.getDay() ] + ", " + now.getDate() + " de " + monName[now.getMonth()] + " de " + now.getFullYear();
+  
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
